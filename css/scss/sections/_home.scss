@@ -1,18 +1,19 @@
 #heru-slider{
 
     .background {
-        background-image: none;
+        display: none;
 
         @include desktop {
-            background-image: url('../../../images/sl-home2.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 60%;
+            display: block;
+            // background-image: url('../../../images/sl-home2.png');
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            // background-position: 60%;
         }
 
         @media (min-width: 1700px) {
-            background-size: 1700px auto; // Maximal bakgrundsbredd på 1700px
-            background-position: center; // Valfritt: centrera bilden
+            background-size: 1700px auto; 
+            background-position: center; 
         }
 
     }

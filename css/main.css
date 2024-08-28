@@ -171,7 +171,6 @@ h6 {
   background-color: var(--color-primary);
 }
 #header .background-primary .container {
-  color: var(--color-light);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -179,19 +178,28 @@ h6 {
 }
 #header .background-primary .container .text p {
   padding: 0;
+  color: var(--color-light);
+  font-size: 0.8rem;
 }
 #header .background-primary .container .social-links {
   display: flex;
   gap: 1rem;
 }
+#header .background-primary .container .social-links a i {
+  color: var(--color-light);
+}
 #header .background-light {
   background-color: var(--color-light);
 }
 #header .background-light .container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   height: 60px;
+}
+#header .background-light .container .logo a img {
+  height: 80%;
+  width: 80%;
 }
 #header .background-light .container .links {
   display: flex;
@@ -202,15 +210,19 @@ h6 {
   font-weight: 600;
   text-decoration: none;
 }
+#header .background-light .container .search-icon {
+  justify-self: end;
+}
+#header .background-light .container .search-icon a {
+  color: var(--color-primary);
+}
+
 #heru-slider .background {
-  background-image: none;
+  display: none;
 }
 @media (min-width: 1400px) {
   #heru-slider .background {
-    background-image: url("../../../images/sl-home2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 60%;
+    display: block;
   }
 }
 @media (min-width: 1700px) {
