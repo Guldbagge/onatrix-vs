@@ -1,0 +1,30 @@
+#heru-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; // Full höjd av sektionen, om du vill det
+    .background {
+        background-image: url('../../../images/sl-home2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60%;
+        height: 550px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .container{
+        .hero-content {
+            width: 45%; // Tar upp 50% av bredden
+        }
+        
+        // Eventuellt om du vill ha tomt utrymme på högersidan utan att lägga till ett element
+        &:after {
+            content: '';
+            width: 50%; // Tomt utrymme som tar upp resterande 50%
+        }
+    } 
+}
